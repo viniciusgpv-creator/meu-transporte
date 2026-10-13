@@ -5,17 +5,54 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
 <meta name="theme-color" content="#0b6cff" />
 <link rel="manifest" href="manifest.webmanifest">
-<title>Meu Transporte — v4</title>
+<title>Meu Transporte — v4.1</title>
 <style>
 :root{--bg:#f4f7fb;--card:#fff;--text:#172033;--muted:#6b7280;--blue:#0b6cff;--green:#13a66a;--orange:#e89a17;--red:#d63b3b;--line:#e6ebf2;--shadow:0 8px 24px rgba(20,35,70,.08);--radius:18px}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}.app{max-width:720px;margin:auto;min-height:100vh;padding-bottom:92px}.top{padding:20px 18px 12px;background:linear-gradient(180deg,#fff 0,#f4f7fb 100%);position:sticky;top:0;z-index:5}.brand{display:flex;align-items:center;gap:12px}.logo{width:46px;height:46px;border-radius:14px;background:#e8f1ff;display:grid;place-items:center;font-size:25px}.brand h1{font-size:20px;margin:0}.brand p{margin:3px 0 0;color:var(--muted);font-size:13px}.date{margin-top:12px;color:var(--muted);font-size:13px}.screen{display:none;padding:10px 16px 24px}.screen.active{display:block}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;margin-bottom:12px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.btn{border:0;border-radius:15px;padding:15px 16px;font-weight:750;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;width:100%}.btn.primary{background:var(--blue);color:#fff}.btn.success{background:var(--green);color:#fff}.btn.light{background:#eef4ff;color:#144a9e}.btn.warn{background:#fff4dc;color:#8a5a00}.btn.danger{background:#ffeded;color:#a11f1f}.btn.small{padding:10px 12px;font-size:14px;border-radius:12px}.hero{padding:20px}.hero .btn{font-size:18px;padding:18px}.metric{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px}.metric b{display:block;font-size:22px}.metric span{font-size:12px;color:var(--muted)}.section-title{font-size:18px;margin:8px 2px 12px}.field{margin-bottom:12px}.field label{display:block;font-size:13px;color:#4b5563;margin-bottom:6px;font-weight:650}.field input,.field select,.field textarea{width:100%;border:1px solid #dce3ec;background:#fff;border-radius:13px;padding:13px 12px;font:inherit;color:var(--text);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#8db7ff;box-shadow:0 0 0 3px #e8f1ff}.field textarea{min-height:84px;resize:vertical}.muted{color:var(--muted);font-size:13px}.row{display:flex;gap:10px;align-items:center}.row>*{flex:1}.pill{display:inline-flex;align-items:center;border-radius:999px;padding:6px 9px;font-size:12px;font-weight:750}.pill.ok{background:#e9f8f1;color:#0b7a4b}.pill.pending{background:#fff5dc;color:#936000}.vehicle{display:flex;gap:12px;align-items:flex-start}.thumb{width:54px;height:54px;border-radius:13px;background:#eef4ff;display:grid;place-items:center;font-size:25px;flex:none}.vehicle h3{font-size:15px;margin:0 0 4px}.vehicle p{margin:2px 0;color:#596274;font-size:13px}.vehicle-actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}.tabs{display:flex;gap:8px;margin-bottom:12px;overflow:auto}.tabchip{white-space:nowrap;border:1px solid var(--line);background:#fff;padding:9px 12px;border-radius:999px;font-weight:700;font-size:13px}.tabchip.active{background:#eaf2ff;color:#0b56c5;border-color:#bad0ff}.empty{text-align:center;padding:28px 12px;color:var(--muted)}.bottom{position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);z-index:20}.nav{max-width:720px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);padding:7px 8px calc(7px + env(safe-area-inset-bottom))}.nav button{border:0;background:transparent;color:#707887;padding:8px 4px;font-size:11px;font-weight:700}.nav button i{display:block;font-style:normal;font-size:22px;margin-bottom:2px}.nav button.active{color:var(--blue)}.notice{padding:12px 13px;border-radius:14px;background:#eaf7f0;color:#126d49;font-size:13px;margin-bottom:12px}.notice.blue{background:#edf4ff;color:#174f9f}.notice.warn{background:#fff6df;color:#815a09}.photo-preview{width:100%;max-height:220px;object-fit:cover;border-radius:14px;margin-top:8px;display:none}.divider{height:1px;background:var(--line);margin:14px 0}.right{margin-left:auto}.hidden{display:none!important}.summaryline{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}.summaryline:last-child{border-bottom:0}.fab{position:fixed;right:max(18px,calc((100vw - 720px)/2 + 18px));bottom:92px;width:auto;padding:14px 18px;box-shadow:0 10px 28px rgba(11,108,255,.28);z-index:15}.speech{width:auto;flex:none;padding:12px 14px}.speech.listening{background:#ffe6e6;color:#a11f1f;animation:pulse 1s infinite}.tiny{font-size:11px;color:var(--muted)}.details{border:1px solid var(--line);border-radius:14px;margin:4px 0 14px;overflow:hidden}.details summary{list-style:none;cursor:pointer;padding:13px 14px;font-weight:750;color:#144a9e;background:#f7faff}.details summary::-webkit-details-marker{display:none}.details[open] summary{border-bottom:1px solid var(--line)}.details-body{padding:14px}.ocr-status{margin-top:8px;font-size:12px;color:var(--muted)}.ocr-status.busy{color:#174f9f}.ocr-status.ok{color:#0b7a4b}.ocr-status.err{color:#a11f1f}@keyframes pulse{50%{opacity:.55}}@media(max-width:420px){.grid2{gap:9px}.metric{padding:12px}.metric b{font-size:19px}.row.stack-sm{display:block}.row.stack-sm>*{margin-bottom:10px}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.app{max-width:720px;margin:auto;min-height:100vh;padding-bottom:92px}
+.top{padding:20px 18px 12px;background:linear-gradient(180deg,#fff 0,#f4f7fb 100%);position:sticky;top:0;z-index:5}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:46px;height:46px;border-radius:14px;background:#e8f1ff;display:grid;place-items:center;font-size:25px}
+.brand h1{font-size:20px;margin:0}.brand p{margin:3px 0 0;color:var(--muted);font-size:13px}.date{margin-top:12px;color:var(--muted);font-size:13px}
+.screen{display:none;padding:10px 16px 24px}.screen.active{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;margin-bottom:12px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn{border:0;border-radius:15px;padding:15px 16px;font-weight:750;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;width:100%}
+.btn.primary{background:var(--blue);color:#fff}.btn.success{background:var(--green);color:#fff}.btn.light{background:#eef4ff;color:#144a9e}.btn.warn{background:#fff4dc;color:#8a5a00}.btn.danger{background:#ffeded;color:#a11f1f}
+.btn.small{padding:10px 12px;font-size:14px;border-radius:12px}.hero{padding:20px}.hero .btn{font-size:18px;padding:18px}
+.metric{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px}.metric b{display:block;font-size:22px}.metric span{font-size:12px;color:var(--muted)}
+.section-title{font-size:18px;margin:8px 2px 12px}
+.field{margin-bottom:12px}.field label{display:block;font-size:13px;color:#4b5563;margin-bottom:6px;font-weight:650}
+.field input,.field select,.field textarea{width:100%;border:1px solid #dce3ec;background:#fff;border-radius:13px;padding:13px 12px;font:inherit;color:var(--text);outline:none}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#8db7ff;box-shadow:0 0 0 3px #e8f1ff}.field textarea{min-height:84px;resize:vertical}
+.muted{color:var(--muted);font-size:13px}.row{display:flex;gap:10px;align-items:center}.row>*{flex:1}
+.pill{display:inline-flex;align-items:center;border-radius:999px;padding:6px 9px;font-size:12px;font-weight:750}.pill.ok{background:#e9f8f1;color:#0b7a4b}.pill.pending{background:#fff5dc;color:#936000}
+.vehicle{display:flex;gap:12px;align-items:flex-start}.thumb{width:54px;height:54px;border-radius:13px;background:#eef4ff;display:grid;place-items:center;font-size:25px;flex:none}
+.vehicle h3{font-size:15px;margin:0 0 4px}.vehicle p{margin:2px 0;color:#596274;font-size:13px}.vehicle-actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.tabs{display:flex;gap:8px;margin-bottom:12px;overflow:auto}.tabchip{white-space:nowrap;border:1px solid var(--line);background:#fff;padding:9px 12px;border-radius:999px;font-weight:700;font-size:13px}
+.tabchip.active{background:#eaf2ff;color:#0b56c5;border-color:#bad0ff}.empty{text-align:center;padding:28px 12px;color:var(--muted)}
+.bottom{position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);z-index:20}
+.nav{max-width:720px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);padding:7px 8px calc(7px + env(safe-area-inset-bottom))}
+.nav button{border:0;background:transparent;color:#707887;padding:8px 4px;font-size:11px;font-weight:700}.nav button i{display:block;font-style:normal;font-size:22px;margin-bottom:2px}.nav button.active{color:var(--blue)}
+.notice{padding:12px 13px;border-radius:14px;background:#eaf7f0;color:#126d49;font-size:13px;margin-bottom:12px}.notice.blue{background:#edf4ff;color:#174f9f}.notice.warn{background:#fff6df;color:#815a09}
+.photo-preview{width:100%;max-height:260px;object-fit:contain;background:#f7f7f7;border-radius:14px;margin-top:8px;display:none}
+.divider{height:1px;background:var(--line);margin:14px 0}.right{margin-left:auto}.hidden{display:none!important}
+.summaryline{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}.summaryline:last-child{border-bottom:0}
+.fab{position:fixed;right:max(18px,calc((100vw - 720px)/2 + 18px));bottom:92px;width:auto;padding:14px 18px;box-shadow:0 10px 28px rgba(11,108,255,.28);z-index:15}
+.speech{width:auto;flex:none;padding:12px 14px}.speech.listening{background:#ffe6e6;color:#a11f1f;animation:pulse 1s infinite}.tiny{font-size:11px;color:var(--muted)}
+.details{border:1px solid var(--line);border-radius:14px;margin:4px 0 14px;overflow:hidden}.details summary{list-style:none;cursor:pointer;padding:13px 14px;font-weight:750;color:#144a9e;background:#f7faff}
+.details summary::-webkit-details-marker{display:none}.details[open] summary{border-bottom:1px solid var(--line)}.details-body{padding:14px}
+.ocr-status{margin-top:8px;font-size:12px;color:var(--muted);line-height:1.35}.ocr-status.busy{color:#174f9f}.ocr-status.ok{color:#0b7a4b}.ocr-status.err{color:#a11f1f}
+.version{font-size:11px;color:var(--muted);margin-left:auto}
+@keyframes pulse{50%{opacity:.55}}
+@media(max-width:420px){.grid2{gap:9px}.metric{padding:12px}.metric b{font-size:19px}.row.stack-sm{display:block}.row.stack-sm>*{margin-bottom:10px}}
 @media print{.top,.bottom,.fab,.no-print{display:none!important}.screen{display:none!important}#reportScreen{display:block!important;padding:0}.card{box-shadow:none;break-inside:avoid}.app{max-width:none;padding:0}body{background:#fff}}
 </style>
 </head>
 <body>
 <div class="app">
 <header class="top">
-  <div class="brand"><div class="logo">🚚</div><div><h1>Meu Transporte</h1><p>Registre. Organize. Simplifique.</p></div></div>
+  <div class="brand"><div class="logo">🚚</div><div><h1>Meu Transporte</h1><p>Registre. Organize. Simplifique.</p></div><div class="version">v4.1</div></div>
   <div class="date" id="todayLabel"></div>
 </header>
 
@@ -49,7 +86,7 @@
   <div class="card">
     <div id="secureModeNotice" class="notice warn hidden"></div>
     <div class="field"><label>O que você vai fotografar?</label><div class="tabs"><button class="tabchip active" id="plateTab" onclick="setIdMode('PLACA')">Placa</button><button class="tabchip" id="vinTab" onclick="setIdMode('VIN')">VIN</button></div></div>
-    <div class="field"><label id="photoLabel">Fotografar placa</label><input id="vehiclePhoto" type="file" accept="image/*" capture="environment"><img id="vehiclePreview" class="photo-preview"><div id="vehicleOcrStatus" class="ocr-status">Centralize a placa na foto. O app vai tentar ler somente a placa.</div><button id="rereadPhotoBtn" class="btn light small hidden" type="button" onclick="rereadVehiclePhoto()" style="margin-top:8px">↻ Ler esta foto novamente</button></div>
+    <div class="field"><label id="photoLabel">Fotografar placa</label><input id="vehiclePhoto" type="file" accept="image/*" capture="environment"><img id="vehiclePreview" class="photo-preview"><div id="vehicleOcrStatus" class="ocr-status">Centralize a placa na foto e mantenha a câmera o mais reta possível.</div><button id="rereadPhotoBtn" class="btn light small hidden" type="button" onclick="rereadVehiclePhoto()" style="margin-top:8px">↻ Ler esta foto novamente</button></div>
     <div class="field"><label id="idLabel">Placa</label><div class="row"><input id="vehicleId" autocomplete="off" autocapitalize="characters" placeholder="Fotografe ou digite"><button class="btn light speech" onclick="startSpeech('vehicleId',this)" title="Ditado direto">🎙️</button></div></div>
     <div class="field"><label>Coleta — de onde está saindo?</label><div class="row"><input id="pickup" placeholder="Ex.: Toyota Midland"><button class="btn light speech" onclick="startSpeech('pickup',this)">🎙️</button></div></div>
     <div class="field"><label>Entrega — para onde vai?</label><div class="row"><input id="delivery" placeholder="Ex.: Manheim Perth"><button class="btn light speech" onclick="startSpeech('delivery',this)">🎙️</button></div></div>
@@ -110,7 +147,7 @@
     <div class="row"><button class="btn light small" onclick="exportBackup()">Exportar backup</button><label class="btn light small" style="cursor:pointer">Importar<input id="backupInput" type="file" accept="application/json" class="hidden" onchange="importBackup(this.files[0])"></label></div>
   </div>
   <div class="card">
-    <b>GPS (teste)</b><p class="muted">O cadastro funciona sem GPS. Este botão apenas tenta salvar sua posição atual; alguns celulares bloqueiam localização quando o arquivo é aberto diretamente.</p>
+    <b>GPS (teste)</b><p class="muted">O cadastro funciona sem GPS. Este botão apenas tenta salvar sua posição atual.</p>
     <button class="btn light small" onclick="captureGPS()">📍 Registrar localização agora</button><div class="tiny" id="gpsStatus" style="margin-top:8px"></div>
   </div>
   <div class="card"><b>Limpar dados</b><p class="muted">Apaga todos os registros salvos neste navegador.</p><button class="btn danger small" onclick="clearData()">Apagar tudo</button></div>
@@ -124,69 +161,177 @@
 <button data-screen="settingsScreen" onclick="showScreen('settingsScreen')"><i>⚙️</i>Ajustes</button>
 </div></nav>
 
-<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
 <script>
 const STORE='meuTransporteV1';
-let state=load()||{shift:null,vehicles:[],agenda:[],gps:[],version:4};
-state.version=4;
-let idMode='PLACA',editVehicleId=null,currentFilter='Todos';
+let state=load()||{shift:null,vehicles:[],agenda:[],gps:[],version:4.1};
+state.version=4.1;
+let idMode='PLACA',editVehicleId=null,currentFilter='Todos',lastVehiclePhotoFile=null;
 const $=id=>document.getElementById(id);
-function now(){return new Date()}
+
 function perthDate(d=new Date()){return new Intl.DateTimeFormat('pt-BR',{timeZone:'Australia/Perth',weekday:'long',day:'2-digit',month:'long',year:'numeric'}).format(d)}
 function perthTime(d=new Date()){return new Intl.DateTimeFormat('pt-BR',{timeZone:'Australia/Perth',hour:'2-digit',minute:'2-digit',hour12:false}).format(d)}
 function dateKey(d=new Date()){return new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Perth',year:'numeric',month:'2-digit',day:'2-digit'}).format(d)}
 function save(){localStorage.setItem(STORE,JSON.stringify(state));renderAll()}
 function load(){try{return JSON.parse(localStorage.getItem(STORE))}catch(e){return null}}
 function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('active',s.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.screen===id));if(id==='vehiclesScreen')renderVehicles();if(id==='reportScreen')renderReport();window.scrollTo(0,0)}
-function renderAll(){ $('todayLabel').textContent=perthDate(); renderHome(); renderVehicles(); renderAgenda(); renderReport(); }
+function renderAll(){$('todayLabel').textContent=perthDate();renderHome();renderVehicles();renderAgenda();renderReport()}
 function renderHome(){const s=state.shift;let html='';if(!s||s.endedAt){html=`<div class="notice blue">Nenhum shift ativo.</div><button class="btn success" onclick="openShift('start')">▶ Iniciar Shift</button>`}else{html=`<div class="notice">Shift iniciado às <b>${displayTime(s.startedAt)}</b> · odômetro ${Number(s.odoStart).toLocaleString('pt-BR')} km</div><div class="grid2"><button class="btn primary" onclick="openVehicleForm()">🚗 Adicionar veículo</button><button class="btn warn" onclick="openShift('end')">■ Finalizar Shift</button></div>`}$('shiftHero').innerHTML=html;$('homeVehiclesCount').textContent=`${todayVehicles().length} registrado${todayVehicles().length===1?'':'s'}`}
 function openShift(mode){showScreen('shiftScreen');$('shiftScreen').dataset.mode=mode;const isEnd=mode==='end';$('shiftTitle').textContent=isEnd?'Finalizar Shift':'Iniciar Shift';$('shiftTimeBox').innerHTML=isEnd?`Hora de finalização: <b>${perthTime()}</b>`:`Hora de início: <b>${perthTime()}</b>`;$('odoInput').value='';$('odoInput').placeholder=isEnd&&state.shift?`Inicial: ${state.shift.odoStart} km`:'Ex.: 123456';$('shiftSaveBtn').textContent=isEnd?'Finalizar shift':'Confirmar e iniciar shift';$('odoPreview').style.display='none';$('odoPhoto').value='';$('odoOcrStatus').textContent='Ao tirar a foto, o app tenta ler o número automaticamente.';$('odoOcrStatus').className='ocr-status'}
 function saveShift(){const mode=$('shiftScreen').dataset.mode;const odo=Number($('odoInput').value);if(!odo||odo<0){alert('Digite o odômetro.');return}if(mode==='start'){state.shift={id:cryptoId(),date:dateKey(),startedAt:new Date().toISOString(),odoStart:odo,endedAt:null,odoEnd:null};save();showScreen('homeScreen')}else{if(!state.shift||state.shift.endedAt){alert('Não há shift ativo.');return}if(odo<Number(state.shift.odoStart)){alert('O odômetro final não pode ser menor que o inicial.');return}state.shift.endedAt=new Date().toISOString();state.shift.odoEnd=odo;save();showReport()}}
-function setIdMode(mode){idMode=mode;$('vinTab').classList.toggle('active',mode==='VIN');$('plateTab').classList.toggle('active',mode==='PLACA');$('idLabel').textContent=mode==='VIN'?'VIN':'Placa';$('photoLabel').textContent=mode==='VIN'?'Fotografar VIN':'Fotografar placa';if(!$('vehiclePhoto').files?.[0]){$('vehicleOcrStatus').textContent=mode==='VIN'?'Aproxime a câmera do VIN. O app vai procurar um VIN de 17 caracteres.':'Centralize a placa na foto. O app vai tentar ler somente a placa.';$('vehicleOcrStatus').className='ocr-status'}}
-function openVehicleForm(id=null){editVehicleId=id;showScreen('vehicleFormScreen');clearVehicleForm();updateSecureModeNotice();$('vehicleTime').value=perthTime();if(id){const v=state.vehicles.find(x=>x.id===id);if(!v)return;setIdMode(v.idType||'VIN');$('vehicleId').value=v.vehicleId||'';$('make').value=v.make||'';$('model').value=v.model||'';$('year').value=v.year||'';$('color').value=v.color||'';$('pickup').value=v.pickup||'';$('delivery').value=v.delivery||'';$('client').value=v.client||'';$('status').value=v.status||'Pendente';$('vehicleTime').value=v.time||'';$('notes').value=v.notes||'';if(v.make||v.model||v.year||v.color)$('extraVehicleInfo').open=true}}
-function clearVehicleForm(){['vehicleId','make','model','year','color','pickup','delivery','client','notes'].forEach(id=>$(id).value='');$('status').value='Pendente';$('vehiclePhoto').value='';$('vehiclePreview').style.display='none';$('vehicleOcrStatus').textContent='Centralize a placa na foto. O app vai tentar ler somente a placa.';$('vehicleOcrStatus').className='ocr-status';$('rereadPhotoBtn').classList.add('hidden');lastVehiclePhotoFile=null;$('extraVehicleInfo').open=false;setIdMode('PLACA')}
+
+function setIdMode(mode){idMode=mode;$('vinTab').classList.toggle('active',mode==='VIN');$('plateTab').classList.toggle('active',mode==='PLACA');$('idLabel').textContent=mode==='VIN'?'VIN':'Placa';$('photoLabel').textContent=mode==='VIN'?'Fotografar VIN':'Fotografar placa';if(!$('vehiclePhoto').files?.[0]){$('vehicleOcrStatus').textContent=mode==='VIN'?'Aproxime a câmera do VIN, evite reflexos e mantenha os 17 caracteres na horizontal.':'Centralize a placa na foto e mantenha a câmera o mais reta possível.';$('vehicleOcrStatus').className='ocr-status'}}
+function openVehicleForm(id=null){editVehicleId=id;showScreen('vehicleFormScreen');clearVehicleForm();updateSecureModeNotice();$('vehicleTime').value=perthTime();if(id){const v=state.vehicles.find(x=>x.id===id);if(!v)return;setIdMode(v.idType||'PLACA');$('vehicleId').value=v.vehicleId||'';$('make').value=v.make||'';$('model').value=v.model||'';$('year').value=v.year||'';$('color').value=v.color||'';$('pickup').value=v.pickup||'';$('delivery').value=v.delivery||'';$('client').value=v.client||'';$('status').value=v.status||'Pendente';$('vehicleTime').value=v.time||'';$('notes').value=v.notes||'';if(v.make||v.model||v.year||v.color)$('extraVehicleInfo').open=true}}
+function clearVehicleForm(){['vehicleId','make','model','year','color','pickup','delivery','client','notes'].forEach(id=>$(id).value='');$('status').value='Pendente';$('vehiclePhoto').value='';$('vehiclePreview').style.display='none';$('vehicleOcrStatus').textContent='Centralize a placa na foto e mantenha a câmera o mais reta possível.';$('vehicleOcrStatus').className='ocr-status';$('rereadPhotoBtn').classList.add('hidden');lastVehiclePhotoFile=null;$('extraVehicleInfo').open=false;setIdMode('PLACA')}
 function cancelVehicleEdit(){editVehicleId=null;showScreen('vehiclesScreen')}
 function saveVehicle(){const vehicleId=$('vehicleId').value.trim().toUpperCase(),pickup=$('pickup').value.trim(),delivery=$('delivery').value.trim(),client=$('client').value.trim();if(!vehicleId){alert(`Digite o ${idMode==='VIN'?'VIN':'número da placa'}.`);return}if(!pickup||!delivery||!client){alert('Preencha coleta, entrega e cliente.');return}const data={id:editVehicleId||cryptoId(),date:dateKey(),idType:idMode,vehicleId,make:$('make').value.trim(),model:$('model').value.trim(),year:$('year').value.trim(),color:$('color').value.trim(),pickup,delivery,client,status:$('status').value,time:$('vehicleTime').value||perthTime(),notes:$('notes').value.trim(),createdAt:new Date().toISOString()};const ix=state.vehicles.findIndex(v=>v.id===editVehicleId);if(ix>=0)state.vehicles[ix]={...state.vehicles[ix],...data};else state.vehicles.unshift(data);editVehicleId=null;save();showScreen('vehiclesScreen')}
 function todayVehicles(){const k=dateKey();return state.vehicles.filter(v=>v.date===k)}
-function renderVehicles(){const arr=todayVehicles();$('mVehicles').textContent=arr.length;$('mDelivered').textContent=arr.filter(v=>v.status==='Entregue').length;$('mPending').textContent=arr.filter(v=>v.status!=='Entregue').length;let filtered=currentFilter==='Todos'?arr:arr.filter(v=>v.status===currentFilter);const box=$('vehicleList');if(!filtered.length){box.innerHTML='<div class="card empty">Nenhum veículo neste filtro.</div>';return}box.innerHTML=filtered.map(v=>`<div class="card vehicle"><div class="thumb">🚘</div><div style="min-width:0;flex:1"><div class="row" style="align-items:flex-start"><div><h3>${escapeHtml([v.make,v.model,v.year].filter(Boolean).join(' ')||v.vehicleId)}</h3><p>${escapeHtml(v.idType)}: ${escapeHtml(v.vehicleId)}</p></div><span class="pill ${v.status==='Entregue'?'ok':'pending'} right">${escapeHtml(v.status)}</span></div><p>📍 ${escapeHtml(v.pickup)} → ${escapeHtml(v.delivery)}</p><p>👤 ${escapeHtml(v.client)} · 🕒 ${escapeHtml(v.time||'')}</p>${v.notes?`<p>📝 ${escapeHtml(v.notes)}</p>`:''}<div class="vehicle-actions"><button class="btn light small" onclick="toggleDelivered('${v.id}')">${v.status==='Entregue'?'↩ Pendente':'✓ Entregue'}</button><button class="btn light small" onclick="openVehicleForm('${v.id}')">Editar</button><button class="btn danger small" onclick="deleteVehicle('${v.id}')">Excluir</button></div></div></div>`).join('')}
+function renderVehicles(){const arr=todayVehicles();$('mVehicles').textContent=arr.length;$('mDelivered').textContent=arr.filter(v=>v.status==='Entregue').length;$('mPending').textContent=arr.filter(v=>v.status!=='Entregue').length;const filtered=currentFilter==='Todos'?arr:arr.filter(v=>v.status===currentFilter);const box=$('vehicleList');if(!filtered.length){box.innerHTML='<div class="card empty">Nenhum veículo neste filtro.</div>';return}box.innerHTML=filtered.map(v=>`<div class="card vehicle"><div class="thumb">🚘</div><div style="min-width:0;flex:1"><div class="row" style="align-items:flex-start"><div><h3>${escapeHtml([v.make,v.model,v.year].filter(Boolean).join(' ')||v.vehicleId)}</h3><p>${escapeHtml(v.idType)}: ${escapeHtml(v.vehicleId)}</p></div><span class="pill ${v.status==='Entregue'?'ok':'pending'} right">${escapeHtml(v.status)}</span></div><p>📍 ${escapeHtml(v.pickup)} → ${escapeHtml(v.delivery)}</p><p>👤 ${escapeHtml(v.client)} · 🕒 ${escapeHtml(v.time||'')}</p>${v.notes?`<p>📝 ${escapeHtml(v.notes)}</p>`:''}<div class="vehicle-actions"><button class="btn light small" onclick="toggleDelivered('${v.id}')">${v.status==='Entregue'?'↩ Pendente':'✓ Entregue'}</button><button class="btn light small" onclick="openVehicleForm('${v.id}')">Editar</button><button class="btn danger small" onclick="deleteVehicle('${v.id}')">Excluir</button></div></div></div>`).join('')}
 function setFilter(el){currentFilter=el.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===el));renderVehicles()}
 function toggleDelivered(id){const v=state.vehicles.find(x=>x.id===id);if(v){v.status=v.status==='Entregue'?'Pendente':'Entregue';save()}}
 function deleteVehicle(id){if(confirm('Excluir este veículo?')){state.vehicles=state.vehicles.filter(v=>v.id!==id);save()}}
+
 function saveAgenda(){const when=$('agendaWhen').value,text=$('agendaText').value.trim();if(!when||!text){alert('Preencha data/hora e descrição.');return}state.agenda.push({id:cryptoId(),when,text,done:false});state.agenda.sort((a,b)=>a.when.localeCompare(b.when));$('agendaWhen').value='';$('agendaText').value='';save()}
 function renderAgenda(){const box=$('agendaList');if(!state.agenda.length){box.innerHTML='<div class="card empty">Agenda vazia.</div>';return}box.innerHTML=state.agenda.map(a=>`<div class="card"><div class="row"><div><b style="${a.done?'text-decoration:line-through;color:#7b8492':''}">${escapeHtml(a.text)}</b><div class="muted">${formatLocalDateTime(a.when)}</div></div><span class="pill ${a.done?'ok':'pending'}">${a.done?'Feito':'Pendente'}</span></div><div class="vehicle-actions"><button class="btn light small" onclick="toggleAgenda('${a.id}')">${a.done?'Reabrir':'Concluir'}</button><button class="btn danger small" onclick="deleteAgenda('${a.id}')">Excluir</button></div></div>`).join('')}
 function toggleAgenda(id){const a=state.agenda.find(x=>x.id===id);if(a){a.done=!a.done;save()}}
 function deleteAgenda(id){state.agenda=state.agenda.filter(a=>a.id!==id);save()}
+
 function showReport(){showScreen('reportScreen');renderReport()}
 function renderReport(){const s=state.shift,arr=todayVehicles();const clients=new Set(arr.map(v=>v.client).filter(Boolean));let hours='—',km='—';if(s&&s.startedAt){const end=s.endedAt?new Date(s.endedAt):new Date();hours=formatDuration(new Date(s.startedAt),end);if(s.odoEnd!=null)km=(Number(s.odoEnd)-Number(s.odoStart)).toLocaleString('pt-BR')+' km'}$('rHours').textContent=hours;$('rKm').textContent=km;$('rVehicles').textContent=arr.length;$('rClients').textContent=clients.size;let details='';if(s){details+=`<div class="summaryline"><span>Início</span><b>${displayTime(s.startedAt)}</b></div><div class="summaryline"><span>Fim</span><b>${s.endedAt?displayTime(s.endedAt):'Shift ativo'}</b></div><div class="summaryline"><span>Odômetro inicial</span><b>${Number(s.odoStart).toLocaleString('pt-BR')} km</b></div><div class="summaryline"><span>Odômetro final</span><b>${s.odoEnd!=null?Number(s.odoEnd).toLocaleString('pt-BR')+' km':'—'}</b></div>`}details+=`<div class="summaryline"><span>Entregues</span><b>${arr.filter(v=>v.status==='Entregue').length}</b></div><div class="summaryline"><span>Pendentes</span><b>${arr.filter(v=>v.status!=='Entregue').length}</b></div>`;$('reportDetails').innerHTML=details;$('reportStatus').textContent=s&&s.endedAt?'Shift finalizado e registros salvos neste aparelho.':'Resumo parcial do dia.'}
+
 function exportCSV(){const arr=todayVehicles();const s=state.shift||{};const headers=['Data','Hora','Tipo ID','VIN/Placa','Marca','Modelo','Ano','Cor','Coleta','Entrega','Cliente','Status','Observação','Início Shift','Fim Shift','Odômetro Inicial','Odômetro Final','Km do Dia'];const km=s.odoEnd!=null?Number(s.odoEnd)-Number(s.odoStart):'';const rows=arr.map(v=>[v.date,v.time,v.idType,v.vehicleId,v.make,v.model,v.year,v.color,v.pickup,v.delivery,v.client,v.status,v.notes,s.startedAt?displayTime(s.startedAt):'',s.endedAt?displayTime(s.endedAt):'',s.odoStart??'',s.odoEnd??'',km]);const csv=[headers,...rows].map(r=>r.map(csvCell).join(',')).join('\r\n');downloadBlob('\ufeff'+csv,`meu_transporte_${dateKey()}.csv`,'text/csv;charset=utf-8')}
 function exportBackup(){downloadBlob(JSON.stringify(state,null,2),`meu_transporte_backup_${dateKey()}.json`,'application/json')}
 function importBackup(file){if(!file)return;const rd=new FileReader();rd.onload=()=>{try{const obj=JSON.parse(rd.result);if(!obj||!Array.isArray(obj.vehicles))throw 0;if(confirm('Importar este backup e substituir os dados atuais?')){state=obj;save();alert('Backup importado.')}}catch(e){alert('Arquivo de backup inválido.')}};rd.readAsText(file)}
-function captureGPS(){const el=$('gpsStatus');if(!navigator.geolocation){el.textContent='GPS não disponível neste navegador.';return}el.textContent='Solicitando localização…';navigator.geolocation.getCurrentPosition(pos=>{state.gps.push({at:new Date().toISOString(),lat:pos.coords.latitude,lon:pos.coords.longitude,accuracy:pos.coords.accuracy});save();el.textContent=`Localização registrada com precisão aproximada de ${Math.round(pos.coords.accuracy)} m.`},err=>{el.textContent='Não foi possível obter a localização. O restante do app continua funcionando normalmente.'},{enableHighAccuracy:true,timeout:10000,maximumAge:30000})}
-function clearData(){if(confirm('Tem certeza? Isso apaga todos os dados deste app neste navegador.')){localStorage.removeItem(STORE);state={shift:null,vehicles:[],agenda:[],gps:[],version:4};save();showScreen('homeScreen')}}
-function updateSecureModeNotice(){const n=$('secureModeNotice');if(!n)return;const local=!['http:','https:'].includes(location.protocol);if(local){n.classList.remove('hidden');n.innerHTML='<b>Modo de arquivo local detectado.</b> O Chrome abriu o app como <code>'+escapeHtml(location.protocol||'arquivo local')+'</code>. Nesse modo, OCR por foto e microfone podem ser bloqueados. A versão publicada em HTTPS é a versão indicada para usar essas funções.'}else{n.classList.add('hidden')}}
-async function startSpeech(targetId,button){const status=$('voiceStatus');if(!window.isSecureContext){const msg='O microfone direto precisa da versão HTTPS do aplicativo. Esta cópia foi aberta como arquivo local.';if(status)status.textContent=msg;alert(msg);return}const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){const msg='Este navegador não oferece transcrição direta por voz.';if(status)status.textContent=msg;alert(msg);return}try{if(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia){const stream=await navigator.mediaDevices.getUserMedia({audio:true});stream.getTracks().forEach(t=>t.stop())}}catch(e){const msg='Permissão do microfone não foi concedida. Autorize o microfone para este site no Chrome.';if(status)status.textContent=msg;alert(msg);return}const r=new SR();r.lang=['pickup','delivery','client','agendaText'].includes(targetId)?'en-AU':'pt-BR';r.interimResults=false;r.continuous=false;r.maxAlternatives=1;if(button){button.classList.add('listening');button.textContent='🔴'}if(status)status.textContent='Ouvindo… fale agora.';r.onresult=e=>{const text=e.results[0][0].transcript;const el=$(targetId);el.value=(el.value?el.value+' ':'')+text;if(status)status.textContent='Texto inserido pelo microfone.'};r.onerror=e=>{if(status)status.textContent='Não consegui transcrever ('+e.error+'). Verifique a permissão e tente novamente.'};r.onend=()=>{if(button){button.classList.remove('listening');button.textContent='🎙️'}};try{r.start()}catch(e){if(button){button.classList.remove('listening');button.textContent='🎙️'}if(status)status.textContent='O microfone não pôde ser iniciado: '+(e.message||e.name||'erro')}}
-function setupPhoto(inputId,previewId,onSelected){$(inputId).addEventListener('change',e=>{const f=e.target.files&&e.target.files[0];if(!f)return;const p=$(previewId);p.src=URL.createObjectURL(f);p.style.display='block';if(onSelected)onSelected(f)})}
-let lastVehiclePhotoFile=null;
-const OCR_PATHS={workerPath:'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/worker.min.js',corePath:'https://cdn.jsdelivr.net/npm/tesseract.js-core@5',langPath:'https://tessdata.projectnaptha.com/4.0.0'};
-async function createOcrWorker(status){if(!window.Tesseract)throw new Error('Biblioteca de OCR não carregou.');return await Tesseract.createWorker('eng',1,{...OCR_PATHS,logger:m=>{if(m.status==='recognizing text'&&status)status.textContent=`Lendo a foto… ${Math.round((m.progress||0)*100)}%`}})}
-async function recognizeText(file,statusId){const status=$(statusId);try{status.textContent='Lendo a foto…';status.className='ocr-status busy';const worker=await createOcrWorker(status);try{const result=await worker.recognize(file);status.className='ocr-status ok';return result.data.text||''}finally{await worker.terminate()}}catch(e){status.textContent='OCR indisponível: '+(e.message||e.name||'erro desconhecido');status.className='ocr-status err';return ''}}
+function captureGPS(){const el=$('gpsStatus');if(!navigator.geolocation){el.textContent='GPS não disponível neste navegador.';return}el.textContent='Solicitando localização…';navigator.geolocation.getCurrentPosition(pos=>{state.gps.push({at:new Date().toISOString(),lat:pos.coords.latitude,lon:pos.coords.longitude,accuracy:pos.coords.accuracy});save();el.textContent=`Localização registrada com precisão aproximada de ${Math.round(pos.coords.accuracy)} m.`},()=>{el.textContent='Não foi possível obter a localização. O restante do app continua funcionando normalmente.'},{enableHighAccuracy:true,timeout:10000,maximumAge:30000})}
+function clearData(){if(confirm('Tem certeza? Isso apaga todos os dados deste app neste navegador.')){localStorage.removeItem(STORE);state={shift:null,vehicles:[],agenda:[],gps:[],version:4.1};save();showScreen('homeScreen')}}
+
+function updateSecureModeNotice(){const n=$('secureModeNotice');if(!n)return;const local=!['http:','https:'].includes(location.protocol);if(local){n.classList.remove('hidden');n.innerHTML='<b>Modo de arquivo local detectado.</b> Abra a versão publicada por HTTPS para câmera, OCR e microfone funcionarem melhor.'}else{n.classList.add('hidden')}}
+async function startSpeech(targetId,button){const status=$('voiceStatus');if(!window.isSecureContext){const msg='O microfone direto precisa da versão HTTPS do aplicativo.';if(status)status.textContent=msg;alert(msg);return}const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){const msg='Este navegador não oferece transcrição direta por voz. Você ainda pode usar o microfone do teclado.';if(status)status.textContent=msg;alert(msg);return}try{if(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia){const stream=await navigator.mediaDevices.getUserMedia({audio:true});stream.getTracks().forEach(t=>t.stop())}}catch(e){const msg='Permissão do microfone não foi concedida. Autorize o microfone para este site no Chrome.';if(status)status.textContent=msg;alert(msg);return}const r=new SR();r.lang=['pickup','delivery','client','agendaText'].includes(targetId)?'en-AU':'pt-BR';r.interimResults=false;r.continuous=false;r.maxAlternatives=1;if(button){button.classList.add('listening');button.textContent='🔴'}if(status)status.textContent='Ouvindo… fale agora.';r.onresult=e=>{const text=e.results[0][0].transcript;const el=$(targetId);el.value=(el.value?el.value+' ':'')+text;if(status)status.textContent='Texto inserido pelo microfone.'};r.onerror=e=>{if(status)status.textContent='Não consegui transcrever ('+e.error+').'};r.onend=()=>{if(button){button.classList.remove('listening');button.textContent='🎙️'}};try{r.start()}catch(e){if(button){button.classList.remove('listening');button.textContent='🎙️'}if(status)status.textContent='O microfone não pôde ser iniciado.'}}
+
+function setupPhoto(inputId,previewId,onSelected){$(inputId).addEventListener('change',e=>{const f=e.target.files&&e.target.files[0];if(!f)return;const p=$(previewId);const old=p.dataset.url;if(old)URL.revokeObjectURL(old);const url=URL.createObjectURL(f);p.dataset.url=url;p.src=url;p.style.display='block';if(onSelected)onSelected(f)})}
+
+/* OCR v4.1: carrega Tesseract sob demanda e tenta mais de uma CDN. */
+function loadScript(url){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=url;s.async=true;s.onload=resolve;s.onerror=()=>reject(new Error('Não foi possível baixar o leitor OCR.'));document.head.appendChild(s)})}
+async function ensureTesseract(status){
+  if(window.Tesseract)return;
+  const urls=['https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js','https://unpkg.com/tesseract.js@5/dist/tesseract.min.js'];
+  let last=null;
+  for(let i=0;i<urls.length;i++){
+    try{if(status)status.textContent=`Carregando leitor da foto… ${i+1}/${urls.length}`;await loadScript(urls[i]);if(window.Tesseract)return}catch(e){last=e}
+  }
+  throw new Error((last&&last.message)||'Biblioteca OCR indisponível.')
+}
+async function createOcrWorker(status){
+  await ensureTesseract(status);
+  try{
+    return await Tesseract.createWorker('eng',1,{logger:m=>{if(!status)return;if(m.status==='recognizing text')status.textContent=`Lendo a foto… ${Math.round((m.progress||0)*100)}%`;else if(m.status)status.textContent='OCR: '+m.status.replaceAll('_',' ')}})
+  }catch(e){
+    throw new Error('Não foi possível iniciar o OCR. Verifique a internet e recarregue a página. '+(e.message||''))
+  }
+}
+async function recognizeText(file,statusId){const status=$(statusId);let worker=null;try{status.textContent='Preparando leitura…';status.className='ocr-status busy';worker=await createOcrWorker(status);const result=await worker.recognize(file);status.className='ocr-status ok';return result.data.text||''}catch(e){status.textContent='OCR indisponível: '+(e.message||e.name||'erro desconhecido');status.className='ocr-status err';return ''}finally{if(worker)try{await worker.terminate()}catch{}}}
+
 function normalizeOcr(s){return String(s||'').toUpperCase().replace(/[^A-Z0-9\n -]/g,' ').replace(/[ ]+/g,' ').trim()}
-function extractVin(text){const raw=normalizeOcr(text).replace(/[IOQ]/g,'');const groups=raw.match(/[A-HJ-NPR-Z0-9]{15,19}/g)||[];for(const g of groups){if(g.length===17)return g;for(let i=0;i+17<=g.length;i++){const x=g.slice(i,i+17);if(/^[A-HJ-NPR-Z0-9]{17}$/.test(x))return x}}return ''}
+function cleanVinChars(s){return String(s||'').toUpperCase().replace(/O/g,'0').replace(/Q/g,'0').replace(/I/g,'1').replace(/[^A-HJ-NPR-Z0-9]/g,'')}
+function extractVin(text){
+  const cleaned=String(text||'').toUpperCase().replace(/\b(VIN|CHASSIS|VEHICLE|NUMBER|NO)\b/g,' ');
+  const lines=cleaned.split(/\n+/).map(cleanVinChars).filter(Boolean);
+  const sources=[...lines];
+  const joined=lines.join('');
+  if(joined.length>=17&&joined.length<=40)sources.push(joined);
+  for(const src of sources){
+    if(src.length===17&&/^[A-HJ-NPR-Z0-9]{17}$/.test(src))return src;
+    for(let i=0;i+17<=src.length;i++){const x=src.slice(i,i+17);if(/^[A-HJ-NPR-Z0-9]{17}$/.test(x))return x}
+  }
+  return ''
+}
 function digitLike(c){return ({O:'0',D:'0',Q:'0',I:'1',L:'1',Z:'2',S:'5',G:'6',B:'8'}[c]||c)}
 function letterLike(c){return ({'0':'O','1':'I','2':'Z','5':'S','6':'G','8':'B'}[c]||c)}
 function normalizeWaPlate(s){s=String(s||'').toUpperCase().replace(/[^A-Z0-9]/g,'');if(s.length!==7)return s;return digitLike(s[0])+letterLike(s[1])+letterLike(s[2])+letterLike(s[3])+digitLike(s[4])+digitLike(s[5])+digitLike(s[6])}
-function plateCandidates(text){let clean=normalizeOcr(text).replace(/WESTERN|AUSTRALIA|AUSTRALIAN|VEHICLE|LICENCE|LICENSE/g,' ');const raw=(clean.match(/[A-Z0-9]{4,10}/g)||[]);const out=[];for(const r of raw){out.push(r);if(r.length===8){for(let i=0;i<8;i++)out.push(r.slice(0,i)+r.slice(i+1))}if(r.length>7){for(let i=0;i+7<=r.length;i++)out.push(r.slice(i,i+7))}}return [...new Set(out)]}
-function scorePlate(s){const n=normalizeWaPlate(s);if(/^[0-9][A-Z]{3}[0-9]{3}$/.test(n))return {value:n,score:250};if(/^[A-Z0-9]{6,7}$/.test(s)&&/[A-Z]/.test(s)&&/\d/.test(s))return {value:s,score:90};if(/^[A-Z0-9]{5,8}$/.test(s)&&/[A-Z]/.test(s)&&/\d/.test(s))return {value:s,score:50};return {value:'',score:0}}
+function plateCandidates(text){
+  const clean=normalizeOcr(text).replace(/WESTERN|AUSTRALIA|AUSTRALIAN|VEHICLE|LICENCE|LICENSE|PLATE|REGISTRATION/g,' ');
+  const out=[],add=v=>{v=String(v||'').replace(/[^A-Z0-9]/g,'');if(v.length>=3&&v.length<=9)out.push(v)};
+  for(const line of clean.split(/\n+/)){
+    (line.match(/[A-Z0-9]{2,10}/g)||[]).forEach(add);
+    const compact=line.replace(/[^A-Z0-9]/g,'');
+    if(compact.length<=9)add(compact);
+    if(compact.length>7&&compact.length<=15){for(let len=5;len<=8;len++)for(let i=0;i+len<=compact.length;i++)add(compact.slice(i,i+len))}
+  }
+  return [...new Set(out)]
+}
+function scorePlate(s){
+  s=String(s||'').toUpperCase().replace(/[^A-Z0-9]/g,'');
+  const n=normalizeWaPlate(s);
+  if(/^[0-9][A-Z]{3}[0-9]{3}$/.test(n))return {value:n,score:300};
+  if(/^[A-Z0-9]{5,8}$/.test(s)&&/[A-Z]/.test(s)&&/\d/.test(s))return {value:s,score:150};
+  if(/^[A-Z0-9]{4,8}$/.test(s)&&(/[A-Z]/.test(s)||/\d/.test(s)))return {value:s,score:50};
+  return {value:'',score:0}
+}
 function bestPlate(text){let best={value:'',score:0};for(const c of plateCandidates(text)){const r=scorePlate(c);if(r.score>best.score)best=r}return best}
 function loadImageElement(file){return new Promise((resolve,reject)=>{const url=URL.createObjectURL(file);const img=new Image();img.onload=()=>{URL.revokeObjectURL(url);resolve(img)};img.onerror=e=>{URL.revokeObjectURL(url);reject(e)};img.src=url})}
-function makeOcrCanvas(img,opts={}){const {angle=0,mode='PLACA',crop='full',variant='gray'}=opts;const iw=img.naturalWidth||img.width,ih=img.naturalHeight||img.height;let sx=iw*.02,sy=ih*.04,sw=iw*.96,sh=ih*.92;if(crop==='center'){sx=iw*.08;sy=ih*.20;sw=iw*.84;sh=ih*.60}else if(crop==='middle'){sx=iw*.03;sy=ih*.28;sw=iw*.94;sh=ih*.44}else if(crop==='vin'){sx=iw*.02;sy=ih*.15;sw=iw*.96;sh=ih*.70}const scale=Math.min(3.2,1800/sw);const bw=Math.max(1,Math.round(sw*scale)),bh=Math.max(1,Math.round(sh*scale));const rad=angle*Math.PI/180;const cw=Math.ceil(Math.abs(bw*Math.cos(rad))+Math.abs(bh*Math.sin(rad)));const ch=Math.ceil(Math.abs(bh*Math.cos(rad))+Math.abs(bw*Math.sin(rad)));const c=document.createElement('canvas');c.width=cw;c.height=ch;const x=c.getContext('2d',{willReadFrequently:true});x.fillStyle='#fff';x.fillRect(0,0,cw,ch);x.translate(cw/2,ch/2);x.rotate(rad);x.drawImage(img,sx,sy,sw,sh,-bw/2,-bh/2,bw,bh);x.setTransform(1,0,0,1,0,0);const d=x.getImageData(0,0,cw,ch),a=d.data;let hist=new Array(256).fill(0);for(let i=0;i<a.length;i+=4){const y=Math.max(0,Math.min(255,Math.round(.299*a[i]+.587*a[i+1]+.114*a[i+2])));hist[y]++}let total=a.length/4,sum=0;for(let t=0;t<256;t++)sum+=t*hist[t];let sumB=0,wB=0,bestVar=0,thr=128;for(let t=0;t<256;t++){wB+=hist[t];if(!wB)continue;const wF=total-wB;if(!wF)break;sumB+=t*hist[t];const mB=sumB/wB,mF=(sum-sumB)/wF;const v=wB*wF*(mB-mF)*(mB-mF);if(v>bestVar){bestVar=v;thr=t}}for(let i=0;i<a.length;i+=4){const y=.299*a[i]+.587*a[i+1]+.114*a[i+2];let v;if(variant==='threshold')v=y>thr?255:0;else if(variant==='invert')v=y>thr?0:255;else{v=(y-128)*1.7+128;v=Math.max(0,Math.min(255,v))}a[i]=a[i+1]=a[i+2]=v}x.putImageData(d,0,0);return c}
-async function tryNativeText(file){if(!('TextDetector' in window))return '';try{const bm=await createImageBitmap(file);try{const r=await new TextDetector().detect(bm);return (r||[]).map(x=>x.rawValue||'').join('\n')}finally{bm.close&&bm.close()}}catch(e){return ''}}
-async function tryVinBarcode(file){if(!('BarcodeDetector' in window))return '';try{const formats=await BarcodeDetector.getSupportedFormats();const wanted=['code_39','code_128','data_matrix','pdf417'].filter(x=>formats.includes(x));if(!wanted.length)return '';const bm=await createImageBitmap(file);try{const r=await new BarcodeDetector({formats:wanted}).detect(bm);for(const b of r||[]){const v=extractVin(b.rawValue||'');if(v)return v}}finally{bm.close&&bm.close()}}catch(e){}return ''}
-async function recognizePlateOptimized(file,status){const native=await tryNativeText(file);let best=bestPlate(native);if(best.score>=250)return best.value;const img=await loadImageElement(file);let worker=null;try{worker=await createOcrWorker(status);await worker.setParameters({tessedit_char_whitelist:'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',tessedit_pageseg_mode:'7',preserve_interword_spaces:'1'});const tries=[['center',0,'gray'],['center',-8,'gray'],['center',8,'gray'],['middle',0,'threshold'],['full',0,'gray'],['full',-12,'gray'],['full',12,'gray'],['center',0,'threshold'],['center',0,'invert']];for(let i=0;i<tries.length;i++){status.textContent=`Analisando placa… ${i+1}/${tries.length}`;const [crop,angle,variant]=tries[i];const r=await worker.recognize(makeOcrCanvas(img,{angle,mode:'PLACA',crop,variant}));const candidate=bestPlate(r.data.text||'');if(candidate.score>best.score)best=candidate;if(best.score>=250)break}return best.value}finally{if(worker)await worker.terminate()}}
-async function recognizeVinOptimized(file,status){const byBarcode=await tryVinBarcode(file);if(byBarcode)return byBarcode;const native=extractVin(await tryNativeText(file));if(native)return native;const img=await loadImageElement(file);let worker=null;try{worker=await createOcrWorker(status);await worker.setParameters({tessedit_char_whitelist:'ABCDEFGHJKLMNPRSTUVWXYZ0123456789',tessedit_pageseg_mode:'6'});const tries=[['vin',0,'gray'],['vin',-6,'gray'],['vin',6,'gray'],['center',0,'threshold'],['full',0,'gray']];for(let i=0;i<tries.length;i++){status.textContent=`Analisando VIN… ${i+1}/${tries.length}`;const [crop,angle,variant]=tries[i];const r=await worker.recognize(makeOcrCanvas(img,{angle,mode:'VIN',crop,variant}));const v=extractVin(r.data.text||'');if(v)return v}return ''}finally{if(worker)await worker.terminate()}}
-async function readVehiclePhoto(file){lastVehiclePhotoFile=file;$('rereadPhotoBtn').classList.remove('hidden');const status=$('vehicleOcrStatus');$('vehicleId').value='';try{status.className='ocr-status busy';let value='';if(idMode==='PLACA')value=await recognizePlateOptimized(file,status);else value=await recognizeVinOptimized(file,status);if(value){$('vehicleId').value=value;status.textContent=`Reconhecido: ${value}. Confira antes de salvar.`;status.className='ocr-status ok'}else{status.textContent=(idMode==='PLACA'?'Não consegui reconhecer a placa com segurança.':'Não consegui reconhecer um VIN de 17 caracteres.')+(!window.isSecureContext?' Esta cópia está aberta em modo local; publique a versão HTTPS para liberar o OCR completo.':' Tente uma foto mais próxima e reta.');status.className='ocr-status err'}}catch(e){const local=!window.isSecureContext||!['http:','https:'].includes(location.protocol);status.textContent='Falha no OCR: '+(e.message||e.name||'erro desconhecido')+(local?' — esta cópia está aberta como arquivo local. Use a versão HTTPS.':'');status.className='ocr-status err'}}
+
+function makeOcrCanvas(img,opts={}){
+  const {angle=0,crop='full',variant='gray'}=opts;
+  const iw=img.naturalWidth||img.width,ih=img.naturalHeight||img.height;
+  let sx=iw*.02,sy=ih*.04,sw=iw*.96,sh=ih*.92;
+  if(crop==='center'){sx=iw*.08;sy=ih*.20;sw=iw*.84;sh=ih*.60}
+  else if(crop==='middle'){sx=iw*.03;sy=ih*.28;sw=iw*.94;sh=ih*.44}
+  else if(crop==='vin'){sx=iw*.02;sy=ih*.15;sw=iw*.96;sh=ih*.70}
+  const scale=Math.min(3,1600/sw);
+  const bw=Math.max(1,Math.round(sw*scale)),bh=Math.max(1,Math.round(sh*scale));
+  const rad=angle*Math.PI/180;
+  const cw=Math.ceil(Math.abs(bw*Math.cos(rad))+Math.abs(bh*Math.sin(rad))),ch=Math.ceil(Math.abs(bh*Math.cos(rad))+Math.abs(bw*Math.sin(rad)));
+  const c=document.createElement('canvas');c.width=cw;c.height=ch;
+  const x=c.getContext('2d',{willReadFrequently:true});x.fillStyle='#fff';x.fillRect(0,0,cw,ch);x.translate(cw/2,ch/2);x.rotate(rad);x.drawImage(img,sx,sy,sw,sh,-bw/2,-bh/2,bw,bh);x.setTransform(1,0,0,1,0,0);
+  const d=x.getImageData(0,0,cw,ch),a=d.data,hist=new Array(256).fill(0);
+  for(let i=0;i<a.length;i+=4){const y=Math.max(0,Math.min(255,Math.round(.299*a[i]+.587*a[i+1]+.114*a[i+2])));hist[y]++}
+  const total=a.length/4;let sum=0;for(let t=0;t<256;t++)sum+=t*hist[t];
+  let sumB=0,wB=0,bestVar=0,thr=128;
+  for(let t=0;t<256;t++){wB+=hist[t];if(!wB)continue;const wF=total-wB;if(!wF)break;sumB+=t*hist[t];const mB=sumB/wB,mF=(sum-sumB)/wF,v=wB*wF*(mB-mF)*(mB-mF);if(v>bestVar){bestVar=v;thr=t}}
+  for(let i=0;i<a.length;i+=4){const y=.299*a[i]+.587*a[i+1]+.114*a[i+2];let v;if(variant==='threshold')v=y>thr?255:0;else if(variant==='invert')v=y>thr?0:255;else{v=(y-128)*1.65+128;v=Math.max(0,Math.min(255,v))}a[i]=a[i+1]=a[i+2]=v}
+  x.putImageData(d,0,0);return c
+}
+async function tryNativeText(file){if(!('TextDetector' in window))return '';try{const bm=await createImageBitmap(file);try{const r=await new TextDetector().detect(bm);return (r||[]).map(x=>x.rawValue||'').join('\n')}finally{bm.close&&bm.close()}}catch{return ''}}
+async function tryVinBarcode(file){if(!('BarcodeDetector' in window))return '';try{const formats=await BarcodeDetector.getSupportedFormats();const wanted=['code_39','code_128','data_matrix','pdf417','qr_code'].filter(x=>formats.includes(x));if(!wanted.length)return '';const bm=await createImageBitmap(file);try{const r=await new BarcodeDetector({formats:wanted}).detect(bm);for(const b of r||[]){const v=extractVin(b.rawValue||'');if(v)return v}}finally{bm.close&&bm.close()}}catch{}return ''}
+
+async function recognizePlateOptimized(file,status){
+  const native=await tryNativeText(file);let best=bestPlate(native);if(best.score>=300)return best.value;
+  const img=await loadImageElement(file);let worker=null;
+  try{
+    worker=await createOcrWorker(status);
+    await worker.setParameters({tessedit_char_whitelist:'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',tessedit_pageseg_mode:'7',preserve_interword_spaces:'1'});
+    const tries=[['center',0,'gray'],['middle',0,'threshold'],['center',-6,'gray'],['center',6,'gray'],['full',0,'gray'],['center',0,'threshold'],['center',0,'invert']];
+    for(let i=0;i<tries.length;i++){status.textContent=`Analisando placa… ${i+1}/${tries.length}`;const [crop,angle,variant]=tries[i];const r=await worker.recognize(makeOcrCanvas(img,{angle,crop,variant}));const candidate=bestPlate(r.data.text||'');if(candidate.score>best.score)best=candidate;if(best.score>=300)break}
+    return best.value
+  }finally{if(worker)try{await worker.terminate()}catch{}}
+}
+async function recognizeVinOptimized(file,status){
+  const byBarcode=await tryVinBarcode(file);if(byBarcode)return byBarcode;
+  const native=extractVin(await tryNativeText(file));if(native)return native;
+  const img=await loadImageElement(file);let worker=null;
+  try{
+    worker=await createOcrWorker(status);
+    await worker.setParameters({tessedit_char_whitelist:'ABCDEFGHJKLMNPRSTUVWXYZ0123456789',tessedit_pageseg_mode:'7',preserve_interword_spaces:'0'});
+    const tries=[['vin',0,'gray'],['vin',0,'threshold'],['vin',-5,'gray'],['vin',5,'gray'],['center',0,'gray'],['full',0,'gray']];
+    for(let i=0;i<tries.length;i++){status.textContent=`Analisando VIN… ${i+1}/${tries.length}`;const [crop,angle,variant]=tries[i];const r=await worker.recognize(makeOcrCanvas(img,{angle,crop,variant}));const v=extractVin(r.data.text||'');if(v)return v}
+    return ''
+  }finally{if(worker)try{await worker.terminate()}catch{}}
+}
+async function readVehiclePhoto(file){
+  lastVehiclePhotoFile=file;$('rereadPhotoBtn').classList.remove('hidden');const status=$('vehicleOcrStatus');$('vehicleId').value='';
+  try{
+    status.className='ocr-status busy';
+    const value=idMode==='PLACA'?await recognizePlateOptimized(file,status):await recognizeVinOptimized(file,status);
+    if(value){$('vehicleId').value=value;status.textContent=`Reconhecido: ${value}. Confira antes de salvar.`;status.className='ocr-status ok'}
+    else{status.textContent=idMode==='PLACA'?'Não consegui reconhecer a placa. Aproxime mais, evite reflexos e tente novamente.':'Não consegui reconhecer os 17 caracteres do VIN. Aproxime mais, evite reflexos e tente novamente.';status.className='ocr-status err'}
+  }catch(e){
+    const local=!window.isSecureContext||!['http:','https:'].includes(location.protocol);
+    status.textContent='Falha na leitura da foto: '+(e.message||e.name||'erro desconhecido')+(local?' Abra a versão HTTPS do aplicativo.':' Recarregue a página e tente novamente.');
+    status.className='ocr-status err'
+  }
+}
 function rereadVehiclePhoto(){if(lastVehiclePhotoFile)readVehiclePhoto(lastVehiclePhotoFile)}
 async function readOdoPhoto(file){const text=await recognizeText(file,'odoOcrStatus');if(!text)return;const nums=(text.match(/\d[\d .,'’]{3,}/g)||[]).map(x=>x.replace(/\D/g,'')).filter(x=>x.length>=4&&x.length<=9);if(nums.length){nums.sort((a,b)=>b.length-a.length);$('odoInput').value=nums[0];$('odoOcrStatus').textContent=`Odômetro reconhecido: ${Number(nums[0]).toLocaleString('pt-BR')} km. Confira antes de confirmar.`;$('odoOcrStatus').className='ocr-status ok'}else{$('odoOcrStatus').textContent='Não consegui identificar o número do odômetro.';$('odoOcrStatus').className='ocr-status err'}}
+
 function displayTime(iso){return perthTime(new Date(iso))}
 function formatDuration(a,b){let m=Math.max(0,Math.round((b-a)/60000));const h=Math.floor(m/60);m%=60;return `${h}h ${String(m).padStart(2,'0')}min`}
 function formatLocalDateTime(v){const d=new Date(v);return new Intl.DateTimeFormat('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'}).format(d)}
@@ -194,7 +339,12 @@ function csvCell(x){const s=String(x??'').replace(/"/g,'""');return `"${s}"`}
 function downloadBlob(content,name,type){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([content],{type}));a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1000)}
 function cryptoId(){return (crypto.randomUUID?crypto.randomUUID():Date.now().toString(36)+Math.random().toString(36).slice(2))}
 function escapeHtml(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
-setupPhoto('odoPhoto','odoPreview',readOdoPhoto);setupPhoto('vehiclePhoto','vehiclePreview',readVehiclePhoto);renderAll();updateSecureModeNotice();if('serviceWorker' in navigator&&location.protocol==='https:'){navigator.serviceWorker.register('./sw.js').catch(()=>{})}
+
+setupPhoto('odoPhoto','odoPreview',readOdoPhoto);
+setupPhoto('vehiclePhoto','vehiclePreview',readVehiclePhoto);
+renderAll();
+updateSecureModeNotice();
+if('serviceWorker' in navigator&&location.protocol==='https:'){navigator.serviceWorker.register('./sw.js').catch(()=>{})}
 </script>
 </body>
 </html>
